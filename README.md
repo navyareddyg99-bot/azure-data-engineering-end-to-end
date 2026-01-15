@@ -30,8 +30,8 @@ Source Data → Azure Data Factory → ADLS Gen2 → Databricks (PySpark) → Az
 ## Current Status
 - [x] GitHub repository setup
 - [x] Project documentation
-- [ ] Azure Data Factory pipeline
-- [ ] ADLS storage layers
-- [ ] Databricks transformations
-- [ ] Synapse analytics
+- [X] Azure Data Factory pipeline
+- [X] ADLS storage layers
+- [X] Databricks transformations
+- [X] Synapse analytics
 
