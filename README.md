@@ -7,7 +7,7 @@ This project demonstrates an end-to-end data engineering pipeline using Azure se
 ## Architecture
 Source Data → Azure Data Factory → ADLS Gen2 → Databricks (PySpark) → Azure Synapse Analytics
 
-## Technologies Used
+## Tools Used
 - Azure Data Factory
 - Azure Data Lake Storage Gen2
 - Azure Databricks (PySpark)
@@ -26,6 +26,11 @@ Source Data → Azure Data Factory → ADLS Gen2 → Databricks (PySpark) → Az
 3. Data is transformed using PySpark in Azure Databricks.
 4. Processed data is stored back in ADLS Gen2.
 5. Azure Synapse Analytics is used for querying and analytics.
+
+## Key Design Decisions
+-Used Parquet for optimized analytics
+-Implemented overwrite strategy for idempotent pipelines
+-Used serverless SQL views for BI consumption
 
 ## Current Status
 - [x] GitHub repository setup
