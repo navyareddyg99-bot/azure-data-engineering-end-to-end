@@ -14,11 +14,23 @@ Source Data → Azure Data Factory → ADLS Gen2 → Databricks (PySpark) → Az
 - Azure Synapse Analytics
 - Azure SQL Database
 
-## Key Learnings
-- Built ingestion pipelines using ADF
-- Performed transformations using PySpark
-- Designed storage layers (Raw, Processed)
-- Queried data using Synapse SQL
+## Data Layers (Bronze–Silver–Gold)
+
+### Bronze
+- Raw data ingestion implemented using Azure Data Factory
+- Dynamic pipeline using Lookup and ForEach activities
+- Data landed in ADLS Gen2 with minimal transformation
+
+![Bronze Pipeline]("C:\Users\Navya\OneDrive\Pictures\Screenshots\Screenshot 2026-01-15 144710.png")
+
+### Silver
+- Data cleaning and standardization implemented using Spark
+- Deduplication and schema enforcement applied
+- Data stored in Parquet format for optimized analytics
+
+### Gold
+- Business-level aggregations exposed using Synapse Serverless SQL
+- SQL views created for analytics and BI consumption
 
 ## Data Flow
 1. Source data is stored in Azure SQL Database.
