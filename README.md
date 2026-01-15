@@ -21,9 +21,10 @@ Source Data → Azure Data Factory → ADLS Gen2 → Databricks (PySpark) → Az
 - Dynamic pipeline using Lookup and ForEach activities
 - Data landed in ADLS Gen2 with minimal transformation
 
-![Bronze Pipeline]("C:\Users\Navya\OneDrive\Pictures\Screenshots\Screenshot 2026-01-15 144710.png")
+<img width="997" height="585" alt="GitToRawDynamic" src="https://github.com/user-attachments/assets/e4be4492-bc38-46d7-81ed-571a920cf17e" />
 
 ### Silver
+
 - Data cleaning and standardization implemented using Spark
 - Deduplication and schema enforcement applied
 - Data stored in Parquet format for optimized analytics
