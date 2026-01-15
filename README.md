@@ -28,9 +28,11 @@ Source Data → Azure Data Factory → ADLS Gen2 → Databricks (PySpark) → Az
 5. Azure Synapse Analytics is used for querying and analytics.
 
 ## Key Design Decisions
--Used Parquet for optimized analytics
--Implemented overwrite strategy for idempotent pipelines
--Used serverless SQL views for BI consumption
+- Implemented a Lakehouse architecture using ADLS, Spark, and parquet
+- Designed Bronze-Silver-Gold layers for seperation of concerns
+- Used overwrite strategy to ensure idempotent pipeline reruns
+- Exposed curated data using Synapse Serverless SQL views
+- Secured data access using Managed Identity
 
 ## Current Status
 - [x] GitHub repository setup
